@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Template HTML Level - Tooplate</title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">
+</head>
+
+<body>
+<div class="tm-main-content" id="top">
+    <div class="tm-top-bar-bg"></div>
+    <div class="tm-top-bar" id="tm-top-bar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg narbar-light">
+                <a class="navbar-brand mr-auto" href="#">
+                    <img src="img/logo.png" alt="Logo do site">
+                    Level
+                </a>
+                <button type="button" id="nav-toggle" class="navbar-toggler collapsed"
+                        data-toggle="collapse" data-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#top">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tm-section-4">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tm-section-5">Publicações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tm-section-6">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div class="tm-section tm-bg-img" id="tm-section-1">
+        <div class="container">
+            <form class="tm-search-form tm-section-pad-2">
+                <input type="text" class="form-control" placeholder="Digite seu destino...">
+                <input type="text" class="form-control" placeholder="Data de entrada">
+                <input type="text" class="form-control" placeholder="Data de saída">
+
+                <select class="form-control">
+                    <option>Adultos</option>
+                </select>
+                <select class="form-control">
+                    <option>Crianças</option>
+                </select>
+                <select class="form-control">
+                    <option>Quartos</option>
+                </select>
+
+                <button class="btn btn-primary">Verificar Disponibilidade</button>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Precisa de ajuda?</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="tm-section-2 text-center">
+        <h2>Estamos aqui para ajudar você</h2>
+        <p>Assine nossa newsletter</p>
+        <a href="#" class="tm-btn-white-bordered">Inscrever-se</a>
+    </div>
+
+    <!-- ARTIGOS -->
+    <div class="container text-center">
+        <article>
+            <h3>Template HTML Level do site Tooplate</h3>
+            <p>Você pode baixar, editar e utilizar este template para seu negócio ou clientes.</p>
+            <a href="#">Continuar lendo...</a>
+        </article>
+
+        <article>
+            <h3>Produtor original do template</h3>
+            <p>Não é permitido redistribuir o arquivo ZIP do template.</p>
+            <a href="#">Continuar lendo...</a>
+        </article>
+
+        <article>
+            <h3>Entre em contato se tiver dúvidas</h3>
+            <p>Se encontrar este template em outro site, trata-se de uma cópia ilegal.</p>
+            <a href="#">Continuar lendo...</a>
+        </article>
+    </div>
+
+    <!-- CONTATO -->
+    <div id="tm-section-6" class="container">
+        <form class="contact-form">
+            <input type="text" class="form-control" placeholder="Nome" required>
+            <input type="email" class="form-control" placeholder="E-mail" required>
+            <input type="text" class="form-control" placeholder="Assunto" required>
+            <textarea class="form-control" placeholder="Mensagem" required></textarea>
+            <button class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="tm-bg-dark-blue text-center">
+        <p>
+            Copyright © <span class="tm-current-year"></span> Sua Empresa  
+            - Design: Tooplate
+        </p>
+    </footer>
+</div>
+
+<script>
+    document.querySelector('.tm-current-year').innerText = new Date().getFullYear();
+</script>
+</body>
+</html>
